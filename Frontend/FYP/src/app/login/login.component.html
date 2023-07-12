@@ -1,0 +1,86 @@
+<!-- <div class="settingpos">
+    <div class="container g-0">
+        <app-header></app-header>
+    </div>
+</div> -->
+<!-- class="position-absolute top-50 start-50 translate-middle g-0" -->
+<div class="container margin  g-0">
+    <form class="border p-3 rounded-3 g-0" [formGroup] = "loginForm">
+        <div class="row g-0">
+            <div class="col text-center p-2 mb-3 bg-dark rounded-3" >
+                <span class="fs-3 text-white">Login</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input class="form-control" type="email" id="email" formControlName="email" #userinput>
+                <div class="form-text text-danger" *ngIf="email.errors?.['required'] && (email.touched || email.dirty)">
+                    *Email is required
+                </div>
+                <div class="form-text text-danger" *ngIf="email.errors?.['email']  && (email.touched || email.dirty)">
+                    Enter the correct email format
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="pwd" class="form-label">Password</label>
+                <input type="password" class="form-control" id="pwd" formControlName="pwd" #userpassword>
+                <div class="form-text text-danger" *ngIf="pwd.errors?.['required'] && (pwd.touched || pwd.dirty)">
+                    *Password number is required
+                </div>
+                <div class="form-text text-danger" *ngIf="pwd.errors?.['minlength']  || pwd.errors?.['maxlength'] && (pwd.touched || pwd.dirty)">
+                    Password should be atleast 6 and at max 20 characters long
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid" (click) = "loginsubmitted(userinput.value, userpassword.value)">Submit</button>
+                    <!-- <button type="submit" class="btn btn-primary" (click) = "Testing()">Testing</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mt-3">
+                <span class="me-2">Don't have an Account?</span><a routerLink="/register">Register</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- <div class="container g-0">
+    <form class="border p-3 rounded-3 g-0">
+        <div class="row g-0">
+            <div class="col text-center p-2 mb-3 bg-dark rounded-3" >
+                <span class="fs-3 text-white">Login</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input class="form-control" type="email" id="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="pwd" class="form-label">Password</label>
+                <input type="password" class="form-control" id="pwd" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mt-3">
+                <span class="me-2">Don't have an Account?</span><a href="">Register</a>
+            </div>
+        </div>
+    </form>
+</div> -->

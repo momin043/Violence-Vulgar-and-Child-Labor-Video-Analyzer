@@ -1,0 +1,19 @@
+<!-- <app-login></app-login> -->
+<div class="container-fluid g-0">
+    <!-- <app-register></app-register>  -->
+    <app-header (sideNavToggled)="sideNavstatus = $event;"></app-header>
+
+    <main id="mainapp">
+        <app-navbar [navstatus]="sideNavstatus" [ngClass]="{'app-nav-open': sideNavstatus}"></app-navbar>
+
+        <div class="display-area p-3" [ngClass]="{'display-area-shrink': sideNavstatus}">
+            <router-outlet></router-outlet>
+            <!-- <app-login (childEvent)="handleChildEvent($event)"></app-login>  -->
+            <p class="fs-1 fw-bold fst-italic">
+
+            </p>
+        </div>
+
+    </main>
+
+</div>

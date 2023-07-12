@@ -1,0 +1,17 @@
+<!-- The border white class isnt being implemented anymore, it is null in the css
+It is only used to set the side of stuff but later removed when element 
+size is set -->
+
+<div class="nav-content border-white">
+<!-- [ngClass] = "{'nav-list-open': sideNavstatus}" -->
+    <ul class="nav-list border-white" [ngClass] = "{'nav-list-open': navstatus}" >
+        <li class="nav-list-item border-white" *ngFor="let item of list" > 
+            <i class="{{item.icon}} border-white"></i>
+            <span class="border-white">
+                <a href="#">{{item.name}}</a>
+            </span>
+        </li>
+    </ul>
+</div>
+
+<!-- *ngFor="let item of list" -->

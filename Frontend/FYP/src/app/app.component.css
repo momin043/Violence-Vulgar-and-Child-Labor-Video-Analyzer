@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* app-register{
+    padding-top: 5%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+/* }  */
+app-header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 4rem;
+    z-index: 2;
+}
+
+#mainapp{
+    position:absolute;
+    width: 100%;
+    top:4rem;
+    height: 100vh;
+    z-index: 1;
+}
+
+app-navbar {
+    position:absolute;
+    left: 0rem;
+    width: 50px;
+    height: 195%;
+    /* height: calc(100vh - 4rem); */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    /* border-top: 1px solid white;  no need for border for my website, looks weird */ 
+    background-color: rgba(34,34,34,1);
+    overflow-x: hidden;
+    white-space: nowrap;
+    transition: width 250ms ease-in;
+}
+
+.app-nav-open{
+    width: 12%;
+}
+.display-area{
+    position: relative;
+    left: 55px;
+    width: calc(100% - 12%);  
+    /* 250px being the side of the nav bar */
+    transition: left 250ms linear, width 250ms ease-in;
+
+}
+
+.display-area-shrink {
+    width: calc(100% - 12%);
+    left: 12%;
+}

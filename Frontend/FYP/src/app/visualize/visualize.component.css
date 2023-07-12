@@ -1,0 +1,123 @@
+/* #test{
+    margin:0;
+}
+svg{
+    margin-left:0;
+    
+} */
+
+
+.size {
+    width: 100%;
+    height: 100%;
+}
+
+
+#inputkeyword {
+    margin-top: 0.5%;
+    width: 18%;
+    margin-left: 40%;
+    height: 50px;
+}
+
+#inputkeyword+button {
+    margin-left: 10px;
+    width: 8%;
+    height: 50px;
+}
+
+.useridsize {
+    display: inline-block;
+    /* align-items: center; */
+    text-align: center;
+    margin-top: 1%;
+    width: 33.33%;
+    height: auto;
+}
+
+#userpar {
+    /* text-align: center; */
+    /* margin-left: 10px; */
+    height: 100%;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    width: 80%;
+}
+
+#keywordpar {
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    width: 80%;
+}
+
+#hashtagpar {
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    width: 80%;
+}
+
+
+i{
+    font-size: 200%;
+    margin-right: 0.1%;
+}
+#chart {
+    padding: 30px 0px 0px 20px;
+    width: 49%;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+#piechart {
+    padding: 30px 0px 0px 10px;
+    width: 49%;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+
+.bigcontainer{
+    display: flex;
+}
+
+.rectangle:hover {
+    opacity: 0.50;
+}
+
+.fcontainer{
+    display: flex;
+}
+
+#vio {
+    padding: 10px 0px 0px 10px;
+    width: 24.2%;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+#vul {
+    padding: 10px 0px 0px 10px;
+    width: 24.2%;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+#clean {
+    padding: 10px 0px 0px 10px;
+    width: 24.2%;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+#child {
+    padding: 10px 0px 0px 10px;
+    width: 24.2%;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 20px;
+}

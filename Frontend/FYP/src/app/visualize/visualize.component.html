@@ -1,0 +1,53 @@
+<!-- <p>visualize works!</p> -->
+<div class=" pt-2 border-secondary border-2 size ">
+    <div class="shadow border-dark pb-3">
+        <input type="text" class="rounded-3" id="inputkeyword" placeholder="Enter a Keyword or UserId here">
+        <button type="submit" class="rounded-3 text-white bg-dark" (click)="onSearch()"> Search</button>
+        <br>
+    </div>
+
+
+    <div class="p-2 pt-5">
+        <div class="useridsize">
+            <label>
+                <h5><b>UserIds </b></h5>
+            </label>
+            <p id="userpar" class="border-dark border rounded-3">Entered Userid Goes here </p>
+        </div>
+        <div class="useridsize">
+            <label>
+                <h5><b>Keywords </b></h5>
+            </label>
+            <p id="keywordpar" class="border-dark border rounded-3">Entered Keyword goes here </p>
+        </div>
+        <div class="useridsize">
+            <label>
+                <h5><b>Hashtags </b></h5>
+            </label>
+            <p id="hashtagpar" class="border-dark border rounded-3">Enterd Hashtag Goes here </p>
+        </div>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-chart-simple ms-1 p-1"> </i>
+        <span class="heading fs-2">Analytics</span>
+    </div>
+    <div class="bigcontainer ms-1">
+        <div id="chart" class=" mb-3 ms-1 me-1"></div>
+        <div id="piechart" class=" mb-3 ms-1 me-1"></div>
+    </div>
+    <div class="fcontainer ms-1">
+        <div id="vio" class=" mb-3 ms-1 me-1">
+            <p><b>Violence</b></p>
+        </div>
+        <div id="vul" class=" mb-3 ms-1 me-1">
+            <p><b>Vulgar</b></p>
+        </div>
+        <div id="child" class=" mb-3 ms-1 me-1">
+            <p><b>Child Labor</b></p>
+        </div>
+        <div id="clean" class=" mb-3 ms-1 me-1">
+            <p><b>Clean</b></p>
+        </div>
+    </div>
+</div>

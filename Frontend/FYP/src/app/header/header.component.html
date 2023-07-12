@@ -1,0 +1,63 @@
+<!-- <p>header works!</p> -->
+<nav class="navbar navbar-expand navbar-dark bg-dark px-2">
+<!-- Below div is for menu button 3 lines wala thingy -->
+    <div class="side-nav-button p-2 me-3 text-light" (click)="SideNavToggle()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <a class="navbar-brand px-4" href="#">Social Media Video Analyzer</a>
+    <!-- Nechey wala part is not necessary in our website so comment it later -->
+    <!-- <div class="navbar-collapse">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Menu 1
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Child 1</a></li>
+                    <li><a class="dropdown-item" href="#">Child 2</a></li>
+                    <li><a class="dropdown-item" href="#">Child 3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Menu 2 
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Child 1</a></li>
+                    <li><a class="dropdown-item" href="#">Child 2</a></li>
+                    <li><a class="dropdown-item" href="#">Child 3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Menu 3
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Child 1</a></li>
+                    <li><a class="dropdown-item" href="#">Child 2</a></li>
+                    <li><a class="dropdown-item" href="#">Child 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div> -->
+<!-- The code in the above div is about the drop down lists and how to create menu on the header portion
+It is optional, for now we wont do it -->
+    <!-- <form class="d-flex me-5">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+    </form> -->
+
+    <div class="profile-logo dropdown floating">
+        <button class="btn btn-outline-light dropdown-toggle" id="btnlogin" value="Login" data-bs-toggle="dropdown">
+            {{btnlogin}}
+        </button> 
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <!-- <app-login *ngIf="visible"></app-login> -->
+            <li><a routerLink="/login" class="dropdown-item">Login</a></li>
+            <li><a routerLink="/register" class="dropdown-item">Register</a></li>
+            <li><a routerLink="/login" class="dropdown-item" (click) = "logout()">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- <h1 style="margin-top: 50px;"> {{btnlogin.value}}</h1> -->

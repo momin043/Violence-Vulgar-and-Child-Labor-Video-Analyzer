@@ -1,0 +1,28 @@
+.settingpos{
+    position: absolute;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+form {
+    width: 45%;
+    align-items: center;
+}
+
+app-header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 4rem;
+    z-index: 2;
+}
+
+/* a{
+    color:white;
+    font-weight: bold;
+} */
+
+.margin{
+    margin-left:36%;
+    margin-top: 2%;
+}
