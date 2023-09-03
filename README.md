@@ -45,5 +45,5 @@ Contributions to the Content Analyzer: Violence, Vulgar, and Child Labour Detect
 
 ## Contact
 
-If you have any questions, feedback, or inquiries, please contact moh.momin043@gmail.com. We appreciate your interest and support!
+If you have any questions, feedback, or inquiries, please contact moh.momin043@gmail.com or mohammadtaimur5920@gmail.com. We appreciate your interest and support!
 
